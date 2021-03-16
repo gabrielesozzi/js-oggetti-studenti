@@ -40,8 +40,9 @@ var classe = [
 
 for (var i = 0; i < classe.length; i++) {
     console.log(classe[i]);
-    for (var key in classe[i]) {
-      console.log(classe[i][key]);
-    }
+}
+for (var key in classe) {
+  console.log(classe[key].nome);
+  console.log(classe[key].cognome);
 }
 })
