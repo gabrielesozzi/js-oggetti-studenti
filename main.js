@@ -42,7 +42,27 @@ for (var i = 0; i < classe.length; i++) {
     console.log(classe[i]);
 }
 for (var key in classe) {
-  console.log(classe[key].nome);
-  console.log(classe[key].cognome);
+  console.log(classe[key].nome + " " + classe[key].cognome);
+  console.log();
 }
+
+// 3.Inserisco nuovo object studente chiedendolo all'utente
+ $("#newstudent").click(function(){
+   var nome = $("#name").val();
+   var cognome = $("#lastname").val();
+   var eta = $("#age").val();
+
+   var nuovoStudente = {
+     nome : nome,
+     cognome : cognome,
+     età : eta,
+   }
+
+   console.log(classe);
+   classe.push(nuovoStudente);
+   console.log(classe);
+
+
+ })
+
 })
