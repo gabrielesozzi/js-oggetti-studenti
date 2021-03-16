@@ -46,7 +46,7 @@ for (var key in classe) {
   console.log();
 }
 
-// 3.Inserisco nuovo object studente chiedendolo all'utente
+// 3.Inserisco nuovo object studente dopo averlo chiesto all'utente
  $("#newstudent").click(function(){
    var nome = $("#name").val();
    var cognome = $("#lastname").val();
@@ -61,8 +61,6 @@ for (var key in classe) {
    console.log(classe);
    classe.push(nuovoStudente);
    console.log(classe);
-
-
  })
 
 })
